@@ -1,7 +1,7 @@
 div {
-    border: 2px yellowgreen solid;
-    width: 40px;
-    height: 40px;
+    border: 1px whitesmoke solid;
+    /* max-width: 100%;
+    max-height: 100%; */
     text-align: center;
     padding: 0px;
     margin: 0px;
@@ -22,14 +22,40 @@ button:active {
     background-color: grey;
 }
 
+html {
+    /* border: 1px blue dashed; */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: royalblue;
+    /* display: flex; */
+}
+
+body {
+    /* border: 1px black dashed; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
 #container {
     border: 3px green dashed;
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* display: flex; */
+    /* width: fit-content; */
+    /* height: fit-content; */
+    width: 600px;
+    height: 600px;
+    /* flex-flow: row wrap; */
+    /* justify-content: center; */
     padding: 0px;
     margin: 0px;
     background-color: transparent;
+
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
 }
